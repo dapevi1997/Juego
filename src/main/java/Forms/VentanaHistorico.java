@@ -7,7 +7,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.event.ComponentAdapter;
 import java.sql.ResultSet;
 
-public class VentanaHistorico extends JFrame{
+public class VentanaHistorico extends JFrame {
     private JLabel lblDatosHist;
     private JPanel pnlDatosHist;
     private JButton btnFinJuego;
@@ -17,6 +17,8 @@ public class VentanaHistorico extends JFrame{
     public VentanaHistorico() {
         this.setSize(430, 400);
         this.setTitle("Datos históricos");
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
         this.setVisible(true);
         this.setContentPane(pnlDatosHist);
 
@@ -26,17 +28,17 @@ public class VentanaHistorico extends JFrame{
         tbDatosHist.addComponentListener(new ComponentAdapter() {
         });
     }
-    public void mostrar(){
+
+    public void mostrar() {
         DefaultTableModel modelo = new DefaultTableModel();
         ResultSet rs = BaseDeDatos.obtDatos("select nombre,puntaje from jugadores");
-        modelo.setColumnIdentifiers(new Object[]{"Nombre","Puntaje"});
-        try{
-            while (rs.next()){
-                modelo.addRow(new Object[]{rs.getString("nombre"),rs.getString("puntaje")});
+        modelo.setColumnIdentifiers(new Object[]{"Nombre", "Puntaje"});
+        try {
+            while (rs.next()) {
+                modelo.addRow(new Object[]{rs.getString("nombre"), rs.getString("puntaje")});
             }
             tbDatosHist.setModel(modelo);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
         }
     }
 

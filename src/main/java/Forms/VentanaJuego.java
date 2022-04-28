@@ -15,7 +15,6 @@ public class VentanaJuego extends JFrame {
     private JPanel pnlVentanaJuego;
 
 
-
     private JLabel lblRonda;
     private JLabel lblPregunta;
     private int ResCorr;
@@ -33,7 +32,9 @@ public class VentanaJuego extends JFrame {
 
         this.setSize(430, 400);
         this.setTitle("Jugando");
-        this.configurarcamposR1();
+        this.configCampos(1);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
         this.setContentPane(pnlVentanaJuego);
 
         final ButtonGroup btg;
@@ -44,8 +45,7 @@ public class VentanaJuego extends JFrame {
         btg.add(rb4);
 
         btnRetirarse.addActionListener(e -> {
-            BaseDeDatos baseDeDatos = new BaseDeDatos();
-            baseDeDatos.insert(nomJugador, puntaje);
+            BaseDeDatos.insert(nomJugador, puntaje);
             JOptionPane.showMessageDialog(null, nomJugador + " su puntaje final es: " + puntaje);
             VentanaHistorico ventanaHistorico = new VentanaHistorico();
             ventanaHistorico.setVisible(true);
@@ -53,7 +53,7 @@ public class VentanaJuego extends JFrame {
         });
         btnValidar.addActionListener(e -> {
             int selUsuario = 0;
-            if (lblRonda.getText() == "Primera ronda") {
+            if (lblRonda.getText().equals("Primera ronda")) {
                 if (rb1.isSelected()) {
                     selUsuario = 1;
                 } else if (rb2.isSelected()) {
@@ -69,17 +69,16 @@ public class VentanaJuego extends JFrame {
                 if (selUsuario == ResCorr) {
                     puntaje = 10;
                     JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
-                    configurarcamposR2();
+                    configCampos(2);
                 } else {
                     JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
-                    BaseDeDatos baseDeDatos = new BaseDeDatos();
-                    baseDeDatos.insert(nomJugador, puntaje);
+                    BaseDeDatos.insert(nomJugador, puntaje);
                     VentanaHistorico ventanaHistorico = new VentanaHistorico();
                     ventanaHistorico.setVisible(true);
                     ocultarVentanaJuego();
                 }
 
-            } else if (lblRonda.getText() == "Segunda ronda") {
+            } else if (lblRonda.getText().equals("Segunda ronda")) {
                 if (rb1.isSelected()) {
                     selUsuario = 1;
                 } else if (rb2.isSelected()) {
@@ -95,18 +94,17 @@ public class VentanaJuego extends JFrame {
                 if (selUsuario == ResCorr) {
                     puntaje += 10;
                     JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
-                    configurarcamposR3();
+                    configCampos(3);
 
                 } else {
                     JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
-                    BaseDeDatos baseDeDatos = new BaseDeDatos();
-                    baseDeDatos.insert(nomJugador, puntaje);
+                    BaseDeDatos.insert(nomJugador, puntaje);
                     VentanaHistorico ventanaHistorico = new VentanaHistorico();
                     ventanaHistorico.setVisible(true);
                     ocultarVentanaJuego();
                 }
 
-            } else if (lblRonda.getText() == "Tercera ronda") {
+            } else if (lblRonda.getText().equals("Tercera ronda")) {
                 if (rb1.isSelected()) {
                     selUsuario = 1;
                 } else if (rb2.isSelected()) {
@@ -122,18 +120,17 @@ public class VentanaJuego extends JFrame {
                 if (selUsuario == ResCorr) {
                     puntaje += 10;
                     JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
-                    configurarcamposR4();
+                    configCampos(4);
 
                 } else {
                     JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
-                    BaseDeDatos baseDeDatos = new BaseDeDatos();
-                    baseDeDatos.insert(nomJugador, puntaje);
+                    BaseDeDatos.insert(nomJugador, puntaje);
                     VentanaHistorico ventanaHistorico = new VentanaHistorico();
                     ventanaHistorico.setVisible(true);
                     ocultarVentanaJuego();
                 }
 
-            } else if (lblRonda.getText() == "Cuarta ronda") {
+            } else if (lblRonda.getText().equals("Cuarta ronda")) {
                 if (rb1.isSelected()) {
                     selUsuario = 1;
                 } else if (rb2.isSelected()) {
@@ -149,18 +146,17 @@ public class VentanaJuego extends JFrame {
                 if (selUsuario == ResCorr) {
                     puntaje += 10;
                     JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
-                    configurarcamposRFinal();
+                    configCampos(5);
 
                 } else {
                     JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
-                    BaseDeDatos baseDeDatos = new BaseDeDatos();
-                    baseDeDatos.insert(nomJugador, puntaje);
+                    BaseDeDatos.insert(nomJugador, puntaje);
                     VentanaHistorico ventanaHistorico = new VentanaHistorico();
                     ventanaHistorico.setVisible(true);
                     ocultarVentanaJuego();
                 }
 
-            } else if (lblRonda.getText() == "Ronda final") {
+            } else if (lblRonda.getText().equals("Ronda final")) {
                 if (rb1.isSelected()) {
                     selUsuario = 1;
                 } else if (rb2.isSelected()) {
@@ -182,8 +178,7 @@ public class VentanaJuego extends JFrame {
 
                 } else {
                     JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
-                    BaseDeDatos baseDeDatos = new BaseDeDatos();
-                    baseDeDatos.insert(nomJugador, puntaje);
+                    BaseDeDatos.insert(nomJugador, puntaje);
                     VentanaHistorico ventanaHistorico = new VentanaHistorico();
                     ventanaHistorico.setVisible(true);
                     ocultarVentanaJuego();
@@ -192,19 +187,22 @@ public class VentanaJuego extends JFrame {
         });
     }
 
-    private void configurarcamposR1() {
-        Ronda ronda1 = new Ronda1();
-        lblRonda.setText(ronda1.nronda());
-        lblPregunta.setText(ronda1.pregunta());
-        rb1.setText(ronda1.respuesta1());
-        rb2.setText(ronda1.respuesta2());
-        rb3.setText(ronda1.respuesta3());
-        rb4.setText(ronda1.respuesta4());
-        ResCorr = ronda1.respuestacorrecta();
-    }
+    private void configCampos(int numRonda) {
+        int n;
+        n = numRonda;
+        Ronda ron = null;
+        if (n == 1) {
+            ron = new Ronda1();
+        } else if (n == 2) {
+            ron = new Ronda2();
+        } else if (n == 3) {
+            ron = new Ronda3();
+        } else if (n == 4) {
+            ron = new Ronda4();
+        } else if (n == 5) {
+            ron = new RondaFinal();
+        }
 
-    private void configurarcamposR2() {
-        Ronda ron = new Ronda2();
         lblRonda.setText(ron.nronda());
         lblPregunta.setText(ron.pregunta());
         rb1.setText(ron.respuesta1());
@@ -215,41 +213,6 @@ public class VentanaJuego extends JFrame {
 
     }
 
-    private void configurarcamposR3() {
-        Ronda ron = new Ronda3();
-        lblRonda.setText(ron.nronda());
-        lblPregunta.setText(ron.pregunta());
-        rb1.setText(ron.respuesta1());
-        rb2.setText(ron.respuesta2());
-        rb3.setText(ron.respuesta3());
-        rb4.setText(ron.respuesta4());
-        ResCorr = ron.respuestacorrecta();
-
-    }
-
-    private void configurarcamposR4() {
-        Ronda ron = new Ronda4();
-        lblRonda.setText(ron.nronda());
-        lblPregunta.setText(ron.pregunta());
-        rb1.setText(ron.respuesta1());
-        rb2.setText(ron.respuesta2());
-        rb3.setText(ron.respuesta3());
-        rb4.setText(ron.respuesta4());
-        ResCorr = ron.respuestacorrecta();
-
-    }
-
-    private void configurarcamposRFinal() {
-        Ronda ron = new RondaFinal();
-        lblRonda.setText(ron.nronda());
-        lblPregunta.setText(ron.pregunta());
-        rb1.setText(ron.respuesta1());
-        rb2.setText(ron.respuesta2());
-        rb3.setText(ron.respuesta3());
-        rb4.setText(ron.respuesta4());
-        ResCorr = ron.respuestacorrecta();
-
-    }
 
     private void ocultarVentanaJuego() {
         this.setVisible(false);

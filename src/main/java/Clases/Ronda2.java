@@ -5,7 +5,7 @@ public class Ronda2 extends Ronda {
     String matriz[][];
 
     public Ronda2() {
-        aleatorio=(int)(Math.random()*4);
+        aleatorio = (int) (Math.random() * 4);
 
         matriz = new String[5][6];
 

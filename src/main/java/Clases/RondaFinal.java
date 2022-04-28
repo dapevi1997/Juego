@@ -1,10 +1,11 @@
 package Clases;
 
-public class RondaFinal extends Ronda{
+public class RondaFinal extends Ronda {
     int aleatorio;
     String matriz[][];
+
     public RondaFinal() {
-        aleatorio=(int)(Math.random()*4);
+        aleatorio = (int) (Math.random() * 4);
 
         matriz = new String[5][6];
 

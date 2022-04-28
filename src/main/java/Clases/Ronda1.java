@@ -1,7 +1,5 @@
 package Clases;
 
-import Forms.VentanaJuego;
-
 public class Ronda1 extends Ronda{
     int aleatorio;
     String matriz[][];
