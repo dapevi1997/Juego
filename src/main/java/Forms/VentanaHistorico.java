@@ -4,8 +4,6 @@ import Clases.BaseDeDatos;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.sql.ResultSet;
 
@@ -17,7 +15,7 @@ public class VentanaHistorico extends JFrame{
     private JTable tbDatosHist;
 
     public VentanaHistorico() {
-        this.setSize(500, 500);
+        this.setSize(430, 400);
         this.setTitle("Datos históricos");
         this.setVisible(true);
         this.setContentPane(pnlDatosHist);
@@ -28,12 +26,7 @@ public class VentanaHistorico extends JFrame{
 
 
 
-        btnFinJuego.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.exit(0);
-            }
-        });
+        btnFinJuego.addActionListener(e -> System.exit(0));
         tbDatosHist.addComponentListener(new ComponentAdapter() {
         });
     }

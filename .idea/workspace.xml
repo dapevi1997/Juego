@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54ffdbc5-f85f-4823-b0b4-c7d746012a38" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Clases/prueba.java" afterDir="false" />
+    <list default="true" id="54ffdbc5-f85f-4823-b0b4-c7d746012a38" name="Changes" comment="Segunda actualización">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base_de_datos/juego.db" beforeDir="false" afterPath="$PROJECT_DIR$/base_de_datos/juego.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/BaseDeDatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/BaseDeDatos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/RondaFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/RondaFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/prueba.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaInicial.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaInicial.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaInicial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +28,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="28Lnsb2QIvrQ7k33nm1TlYJEfmh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -100,8 +90,16 @@
       <workItem from="1651004947820" duration="5817000" />
       <workItem from="1651027878730" duration="18408000" />
       <workItem from="1651064537365" duration="19932000" />
-      <workItem from="1651111926303" duration="18902000" />
+      <workItem from="1651111926303" duration="20676000" />
     </task>
+    <task id="LOCAL-00001" summary="Segunda actualización">
+      <created>1651131194945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651131194945</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,5 +115,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Segunda actualización" />
+    <option name="LAST_COMMIT_MESSAGE" value="Segunda actualización" />
   </component>
 </project>

@@ -3,8 +3,7 @@ package Forms;
 import Clases.*;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 
 public class VentanaJuego extends JFrame {
     private JRadioButton rb1;
@@ -14,7 +13,7 @@ public class VentanaJuego extends JFrame {
     private JButton btnValidar;
     private JButton btnRetirarse;
     private JPanel pnlVentanaJuego;
-    private ButtonGroup btg;
+
 
 
     private JLabel lblRonda;
@@ -32,168 +31,162 @@ public class VentanaJuego extends JFrame {
     public VentanaJuego() {
         puntaje = 0;
 
-        this.setSize(400, 400);
+        this.setSize(430, 400);
         this.setTitle("Jugando");
         this.configurarcamposR1();
         this.setContentPane(pnlVentanaJuego);
 
+        final ButtonGroup btg;
         btg = new ButtonGroup();
         btg.add(rb1);
         btg.add(rb2);
         btg.add(rb3);
         btg.add(rb4);
 
-        btnRetirarse.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                BaseDeDatos baseDeDatos = new BaseDeDatos();
-                baseDeDatos.insert(nomJugador, puntaje);
-                JOptionPane.showMessageDialog(null, nomJugador + " su puntaje final es: " + puntaje);
-                VentanaHistorico ventanaHistorico = new VentanaHistorico();
-                ventanaHistorico.setVisible(true);
-                ocultarVentanaJuego();
-            }
+        btnRetirarse.addActionListener(e -> {
+            BaseDeDatos baseDeDatos = new BaseDeDatos();
+            baseDeDatos.insert(nomJugador, puntaje);
+            JOptionPane.showMessageDialog(null, nomJugador + " su puntaje final es: " + puntaje);
+            VentanaHistorico ventanaHistorico = new VentanaHistorico();
+            ventanaHistorico.setVisible(true);
+            ocultarVentanaJuego();
         });
-        btnValidar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Ronda ron1 = new Ronda1();
-                int selUsuario = 0;
-                if (lblRonda.getText() == "Primera ronda") {
-                    if (rb1.isSelected() == true) {
-                        selUsuario = 1;
-                    } else if (rb2.isSelected() == true) {
-                        selUsuario = 2;
+        btnValidar.addActionListener(e -> {
+            int selUsuario = 0;
+            if (lblRonda.getText() == "Primera ronda") {
+                if (rb1.isSelected()) {
+                    selUsuario = 1;
+                } else if (rb2.isSelected()) {
+                    selUsuario = 2;
 
-                    } else if (rb3.isSelected() == true) {
-                        selUsuario = 3;
+                } else if (rb3.isSelected()) {
+                    selUsuario = 3;
 
-                    } else if (rb4.isSelected() == true) {
-                        selUsuario = 4;
-                    }
+                } else if (rb4.isSelected()) {
+                    selUsuario = 4;
+                }
 
-                    if (selUsuario == ResCorr) {
-                        puntaje = 10;
-                        JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
-                        configurarcamposR2();
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
-                        BaseDeDatos baseDeDatos = new BaseDeDatos();
-                        baseDeDatos.insert(nomJugador, puntaje);
-                        VentanaHistorico ventanaHistorico = new VentanaHistorico();
-                        ventanaHistorico.setVisible(true);
-                        ocultarVentanaJuego();
-                    }
+                if (selUsuario == ResCorr) {
+                    puntaje = 10;
+                    JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
+                    configurarcamposR2();
+                } else {
+                    JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
+                    BaseDeDatos baseDeDatos = new BaseDeDatos();
+                    baseDeDatos.insert(nomJugador, puntaje);
+                    VentanaHistorico ventanaHistorico = new VentanaHistorico();
+                    ventanaHistorico.setVisible(true);
+                    ocultarVentanaJuego();
+                }
 
-                } else if (lblRonda.getText() == "Segunda ronda") {
-                    if (rb1.isSelected() == true) {
-                        selUsuario = 1;
-                    } else if (rb2.isSelected() == true) {
-                        selUsuario = 2;
+            } else if (lblRonda.getText() == "Segunda ronda") {
+                if (rb1.isSelected()) {
+                    selUsuario = 1;
+                } else if (rb2.isSelected()) {
+                    selUsuario = 2;
 
-                    } else if (rb3.isSelected() == true) {
-                        selUsuario = 3;
+                } else if (rb3.isSelected()) {
+                    selUsuario = 3;
 
-                    } else if (rb4.isSelected() == true) {
-                        selUsuario = 4;
-                    }
+                } else if (rb4.isSelected()) {
+                    selUsuario = 4;
+                }
 
-                    if (selUsuario == ResCorr) {
-                        puntaje += 10;
-                        JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
-                        configurarcamposR3();
+                if (selUsuario == ResCorr) {
+                    puntaje += 10;
+                    JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
+                    configurarcamposR3();
 
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
-                        BaseDeDatos baseDeDatos = new BaseDeDatos();
-                        baseDeDatos.insert(nomJugador, puntaje);
-                        VentanaHistorico ventanaHistorico = new VentanaHistorico();
-                        ventanaHistorico.setVisible(true);
-                        ocultarVentanaJuego();
-                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
+                    BaseDeDatos baseDeDatos = new BaseDeDatos();
+                    baseDeDatos.insert(nomJugador, puntaje);
+                    VentanaHistorico ventanaHistorico = new VentanaHistorico();
+                    ventanaHistorico.setVisible(true);
+                    ocultarVentanaJuego();
+                }
 
-                } else if (lblRonda.getText() == "Tercera ronda") {
-                    if (rb1.isSelected() == true) {
-                        selUsuario = 1;
-                    } else if (rb2.isSelected() == true) {
-                        selUsuario = 2;
+            } else if (lblRonda.getText() == "Tercera ronda") {
+                if (rb1.isSelected()) {
+                    selUsuario = 1;
+                } else if (rb2.isSelected()) {
+                    selUsuario = 2;
 
-                    } else if (rb3.isSelected() == true) {
-                        selUsuario = 3;
+                } else if (rb3.isSelected()) {
+                    selUsuario = 3;
 
-                    } else if (rb4.isSelected() == true) {
-                        selUsuario = 4;
-                    }
+                } else if (rb4.isSelected()) {
+                    selUsuario = 4;
+                }
 
-                    if (selUsuario == ResCorr) {
-                        puntaje += 10;
-                        JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
-                        configurarcamposR4();
+                if (selUsuario == ResCorr) {
+                    puntaje += 10;
+                    JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
+                    configurarcamposR4();
 
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
-                        BaseDeDatos baseDeDatos = new BaseDeDatos();
-                        baseDeDatos.insert(nomJugador, puntaje);
-                        VentanaHistorico ventanaHistorico = new VentanaHistorico();
-                        ventanaHistorico.setVisible(true);
-                        ocultarVentanaJuego();
-                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
+                    BaseDeDatos baseDeDatos = new BaseDeDatos();
+                    baseDeDatos.insert(nomJugador, puntaje);
+                    VentanaHistorico ventanaHistorico = new VentanaHistorico();
+                    ventanaHistorico.setVisible(true);
+                    ocultarVentanaJuego();
+                }
 
-                } else if (lblRonda.getText() == "Cuarta ronda") {
-                    if (rb1.isSelected() == true) {
-                        selUsuario = 1;
-                    } else if (rb2.isSelected() == true) {
-                        selUsuario = 2;
+            } else if (lblRonda.getText() == "Cuarta ronda") {
+                if (rb1.isSelected()) {
+                    selUsuario = 1;
+                } else if (rb2.isSelected()) {
+                    selUsuario = 2;
 
-                    } else if (rb3.isSelected() == true) {
-                        selUsuario = 3;
+                } else if (rb3.isSelected()) {
+                    selUsuario = 3;
 
-                    } else if (rb4.isSelected() == true) {
-                        selUsuario = 4;
-                    }
+                } else if (rb4.isSelected()) {
+                    selUsuario = 4;
+                }
 
-                    if (selUsuario == ResCorr) {
-                        puntaje += 10;
-                        JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
-                        configurarcamposRFinal();
+                if (selUsuario == ResCorr) {
+                    puntaje += 10;
+                    JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
+                    configurarcamposRFinal();
 
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
-                        BaseDeDatos baseDeDatos = new BaseDeDatos();
-                        baseDeDatos.insert(nomJugador, puntaje);
-                        VentanaHistorico ventanaHistorico = new VentanaHistorico();
-                        ventanaHistorico.setVisible(true);
-                        ocultarVentanaJuego();
-                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
+                    BaseDeDatos baseDeDatos = new BaseDeDatos();
+                    baseDeDatos.insert(nomJugador, puntaje);
+                    VentanaHistorico ventanaHistorico = new VentanaHistorico();
+                    ventanaHistorico.setVisible(true);
+                    ocultarVentanaJuego();
+                }
 
-                } else if (lblRonda.getText() == "Ronda final") {
-                    if (rb1.isSelected() == true) {
-                        selUsuario = 1;
-                    } else if (rb2.isSelected() == true) {
-                        selUsuario = 2;
+            } else if (lblRonda.getText() == "Ronda final") {
+                if (rb1.isSelected()) {
+                    selUsuario = 1;
+                } else if (rb2.isSelected()) {
+                    selUsuario = 2;
 
-                    } else if (rb3.isSelected() == true) {
-                        selUsuario = 3;
+                } else if (rb3.isSelected()) {
+                    selUsuario = 3;
 
-                    } else if (rb4.isSelected() == true) {
-                        selUsuario = 4;
-                    }
+                } else if (rb4.isSelected()) {
+                    selUsuario = 4;
+                }
 
-                    if (selUsuario == ResCorr) {
-                        puntaje += 10;
-                        JOptionPane.showMessageDialog(null, "Excelente \n Su puntaje es: " + puntaje);
-                        VentanaHistorico ventanaHistorico = new VentanaHistorico();
-                        ventanaHistorico.setVisible(true);
-                        ocultarVentanaJuego();
+                if (selUsuario == ResCorr) {
+                    puntaje += 10;
+                    JOptionPane.showMessageDialog(null, "Excelente \n Su puntaje es: " + puntaje);
+                    VentanaHistorico ventanaHistorico = new VentanaHistorico();
+                    ventanaHistorico.setVisible(true);
+                    ocultarVentanaJuego();
 
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
-                        BaseDeDatos baseDeDatos = new BaseDeDatos();
-                        baseDeDatos.insert(nomJugador, puntaje);
-                        VentanaHistorico ventanaHistorico = new VentanaHistorico();
-                        ventanaHistorico.setVisible(true);
-                        ocultarVentanaJuego();
-                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
+                    BaseDeDatos baseDeDatos = new BaseDeDatos();
+                    baseDeDatos.insert(nomJugador, puntaje);
+                    VentanaHistorico ventanaHistorico = new VentanaHistorico();
+                    ventanaHistorico.setVisible(true);
+                    ocultarVentanaJuego();
                 }
             }
         });
