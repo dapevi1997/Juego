@@ -5,15 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54ffdbc5-f85f-4823-b0b4-c7d746012a38" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clases/prueba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base_de_datos/juego.db" beforeDir="false" afterPath="$PROJECT_DIR$/base_de_datos/juego.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/BaseDeDatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/BaseDeDatos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/RondaFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/RondaFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaInicial.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaInicial.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaInicial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28Lnsb2QIvrQ7k33nm1TlYJEfmh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -25,9 +52,43 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "72",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "242",
     "WebServerToolWindowFactoryState": "false"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danie\IdeaProjects\Juego\Archivos" />
+      <recent name="C:\Users\danie\IdeaProjects\Juego\base_de_datos" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Clases.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Clases.main" />
+      <module name="Juego" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Clases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Clases.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,9 +97,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651004943440</updated>
-      <workItem from="1651004947820" duration="3000" />
+      <workItem from="1651004947820" duration="5817000" />
+      <workItem from="1651027878730" duration="18408000" />
+      <workItem from="1651064537365" duration="19932000" />
+      <workItem from="1651111926303" duration="18902000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

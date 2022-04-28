@@ -1,13 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Forms.VentanaInicial">
-  <grid id="27dc6" row-count="1" column-count="1" layout-manager="GridLayoutManager">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="pnlBienv" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="-1">
+    <margin top="30" left="30" bottom="30" right="30"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
-      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+      <xy x="20" y="20" width="574" height="252"/>
     </constraints>
-    <properties/>
-    <border type="none"/>
-    <children/>
+    <properties>
+      <background color="-8485747"/>
+    </properties>
+    <border type="etched"/>
+    <children>
+      <component id="26203" class="javax.swing.JLabel" binding="lblBienv">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Tekton Pro Ext" size="28" style="1"/>
+          <text value="Bienvenido al juego"/>
+        </properties>
+      </component>
+      <component id="23f47" class="javax.swing.JLabel" binding="lblNombre">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="16" style="0"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Ingrese nombre:"/>
+        </properties>
+      </component>
+      <component id="1c7ac" class="javax.swing.JTextField" binding="txtNombre">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="16" style="0"/>
+          <horizontalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="cac2a" class="javax.swing.JButton" binding="btnSalir">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="16" style="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Salir"/>
+        </properties>
+      </component>
+      <component id="aec93" class="javax.swing.JButton" binding="btbComenzar">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="100" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="16" style="0"/>
+          <text value="Comenzar"/>
+        </properties>
+      </component>
+    </children>
   </grid>
 </form>
