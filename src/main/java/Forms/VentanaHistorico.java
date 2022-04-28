@@ -22,10 +22,6 @@ public class VentanaHistorico extends JFrame{
 
         mostrar();
 
-
-
-
-
         btnFinJuego.addActionListener(e -> System.exit(0));
         tbDatosHist.addComponentListener(new ComponentAdapter() {
         });
@@ -37,13 +33,10 @@ public class VentanaHistorico extends JFrame{
         try{
             while (rs.next()){
                 modelo.addRow(new Object[]{rs.getString("nombre"),rs.getString("puntaje")});
-
             }
             tbDatosHist.setModel(modelo);
-
         }
         catch (Exception e){
-
         }
     }
 

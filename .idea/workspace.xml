@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54ffdbc5-f85f-4823-b0b4-c7d746012a38" name="Changes" comment="Segunda actualización">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_de_datos/juego.db" beforeDir="false" afterPath="$PROJECT_DIR$/base_de_datos/juego.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/prueba.java" beforeDir="false" />
+    <list default="true" id="54ffdbc5-f85f-4823-b0b4-c7d746012a38" name="Changes" comment="Tercera actualización">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/BaseDeDatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/BaseDeDatos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <workItem from="1651004947820" duration="5817000" />
       <workItem from="1651027878730" duration="18408000" />
       <workItem from="1651064537365" duration="19932000" />
-      <workItem from="1651111926303" duration="20676000" />
+      <workItem from="1651111926303" duration="21037000" />
     </task>
     <task id="LOCAL-00001" summary="Segunda actualización">
       <created>1651131194945</created>
@@ -99,7 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651131194945</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Segunda actualización">
+      <created>1651132885815</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651132885815</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tercera actualización">
+      <created>1651132979298</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651132979298</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +129,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Segunda actualización" />
-    <option name="LAST_COMMIT_MESSAGE" value="Segunda actualización" />
+    <MESSAGE value="Tercera actualización" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tercera actualización" />
   </component>
 </project>
