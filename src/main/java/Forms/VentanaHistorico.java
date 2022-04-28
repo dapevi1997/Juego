@@ -30,7 +30,12 @@ public class VentanaHistorico extends JFrame {
     }
 
     public void mostrar() {
-        DefaultTableModel modelo = new DefaultTableModel();
+        DefaultTableModel modelo = new DefaultTableModel() {
+            @Override
+            public boolean isCellEditable(int row, int colum) {
+                return false;
+            }
+        };
         ResultSet rs = BaseDeDatos.obtDatos("select nombre,puntaje from jugadores");
         modelo.setColumnIdentifiers(new Object[]{"Nombre", "Puntaje"});
         try {
@@ -38,6 +43,7 @@ public class VentanaHistorico extends JFrame {
                 modelo.addRow(new Object[]{rs.getString("nombre"), rs.getString("puntaje")});
             }
             tbDatosHist.setModel(modelo);
+
         } catch (Exception e) {
         }
     }
