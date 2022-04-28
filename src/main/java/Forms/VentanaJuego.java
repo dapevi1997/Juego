@@ -68,7 +68,7 @@ public class VentanaJuego extends JFrame {
 
                 if (selUsuario == ResCorr) {
                     puntaje = 10;
-                    JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
+                    JOptionPane.showMessageDialog(null, "Respuesta correcta \n Su puntaje es: " + puntaje);
                     configCampos(2);
                 } else {
                     JOptionPane.showMessageDialog(null, "Respuesta incorrecta \n Su puntaje final es: " + puntaje);
@@ -93,7 +93,7 @@ public class VentanaJuego extends JFrame {
 
                 if (selUsuario == ResCorr) {
                     puntaje += 10;
-                    JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
+                    JOptionPane.showMessageDialog(null, "Respuesta correcta \n Su puntaje es: " + puntaje);
                     configCampos(3);
 
                 } else {
@@ -119,7 +119,7 @@ public class VentanaJuego extends JFrame {
 
                 if (selUsuario == ResCorr) {
                     puntaje += 10;
-                    JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
+                    JOptionPane.showMessageDialog(null, "Respuesta correcta \n Su puntaje es: " + puntaje);
                     configCampos(4);
 
                 } else {
@@ -145,7 +145,7 @@ public class VentanaJuego extends JFrame {
 
                 if (selUsuario == ResCorr) {
                     puntaje += 10;
-                    JOptionPane.showMessageDialog(null, "Respuesta Correcta \n Su puntaje es: " + puntaje);
+                    JOptionPane.showMessageDialog(null, "Respuesta correcta \n Su puntaje es: " + puntaje);
                     configCampos(5);
 
                 } else {
