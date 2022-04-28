@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54ffdbc5-f85f-4823-b0b4-c7d746012a38" name="Changes" comment="Tercera actualización">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_de_datos/juego.db" beforeDir="false" afterPath="$PROJECT_DIR$/base_de_datos/juego.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/Ronda2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/Ronda2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clases/RondaFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clases/RondaFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaHistorico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaInicial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Forms/VentanaJuego.java" afterDir="false" />
-    </list>
+    <list default="true" id="54ffdbc5-f85f-4823-b0b4-c7d746012a38" name="Changes" comment="Cuarta actualización" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +85,7 @@
       <workItem from="1651027878730" duration="18408000" />
       <workItem from="1651064537365" duration="19932000" />
       <workItem from="1651111926303" duration="21349000" />
-      <workItem from="1651167696195" duration="5557000" />
+      <workItem from="1651167696195" duration="5882000" />
     </task>
     <task id="LOCAL-00001" summary="Segunda actualización">
       <created>1651131194945</created>
@@ -125,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651133274570</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Cuarta actualización">
+      <created>1651175155299</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651175155299</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +142,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Segunda actualización" />
     <MESSAGE value="Tercera actualización" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tercera actualización" />
+    <MESSAGE value="Cuarta actualización" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cuarta actualización" />
   </component>
 </project>
